@@ -74,10 +74,10 @@ void * prevList(List * list)
 
 void pushFront(List * list, void * data) 
 {
-  Node *L = malloc(sizeof(Node));
-  L->data =  data;
-  L->next = list->head;
-  list->head = L->data;
+  list->current = list->head;
+  list->current-> data = data;
+  list->head = list->current;
+  
 }
 
 void pushBack(List * list, void * data) {
