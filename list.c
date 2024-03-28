@@ -78,7 +78,6 @@ void pushFront(List * list, void * data)
   L->data = data;
   L->next = list->head;
   list->head = L;
-  
 }
 
 void pushBack(List * list, void * data) {
@@ -99,7 +98,8 @@ void * popBack(List * list) {
     return popCurrent(list);
 }
 
-void * popCurrent(List * list) {
+void * popCurrent(List * list) 
+{
     return NULL;
 }
 
