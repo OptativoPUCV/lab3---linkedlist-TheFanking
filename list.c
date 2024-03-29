@@ -87,8 +87,6 @@ void pushBack(List * list, void * data) {
 
 void pushCurrent(List * list, void * data) 
 {
-  Node *L = createNode(data);
-  Node *current = list->head;
   
   
 }
