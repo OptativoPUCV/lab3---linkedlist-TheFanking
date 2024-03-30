@@ -456,3 +456,9 @@ list.c:93:9: error: variable ‘prev’ set but not used [-Werror=unused-but-set
 cc1: all warnings being treated as errors
 Compilation failed
 8c10fce
+Sat 30 Mar 2024 04:24:17 PM UTC: 
+ list.c | 4 ----
+ 1 file changed, 4 deletions(-)
+ tests:  10|2
+total_score: 45/70
+7d90d45

@@ -90,19 +90,15 @@ void pushCurrent(List * list, void * data)
   Node *L = createNode(data);
   Node *current = list->head;
   int posicion = 0;
-  Node *prev = NULL;
   while (current->next != NULL)
     {
-       prev = current;
        current = current->next;
        posicion+= 1;
     }
   if (current != NULL) 
   {
-          L->prev = L->prev;
-          L->next = current->next;
-          current->prev = L;
-          current->next = L;
+        L->next = current->next;
+        current->next = L;
   }
 }
 
