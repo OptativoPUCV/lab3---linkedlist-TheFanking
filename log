@@ -403,3 +403,22 @@ Fri 29 Mar 2024 08:24:35 PM UTC:
  tests:  10|2
 total_score: 45/70
 2c09e41
+Sat 30 Mar 2024 04:13:32 PM UTC: 
+ list.c | 11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:90:9: error: unused variable ‘L’ [-Werror=unused-variable]
+   90 |   Node *L = createNode(data);
+      |         ^
+list.c: At top level:
+list.c:99:3: error: expected ‘;’ before ‘void’
+   99 | }b
+      |   ^
+      |   ;
+  100 | 
+  101 | void * popFront(List * list) {
+      | ~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5b25cc5
