@@ -97,7 +97,7 @@ void pushCurrent(List * list, void * data)
   if (list->current == list->head)
   {
     L->next = list->head->next;
-    list-> head = L;
+    list->head->next = L;
   }
   
 }
