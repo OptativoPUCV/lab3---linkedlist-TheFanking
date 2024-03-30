@@ -868,3 +868,16 @@ Sat 30 Mar 2024 10:33:49 PM UTC:
  1 file changed, 1 deletion(-)
  tests:  0|0
 e217b67
+Sat 30 Mar 2024 10:34:40 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:151:37: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+  151 |     list->current->prev->next = list->next;
+      |                                     ^~
+list.c:152:37: error: ‘List’ {aka ‘struct List’} has no member named ‘prev’
+  152 |     list->current->next->prev = list->prev;
+      |                                     ^~
+Compilation failed
+1ece825
