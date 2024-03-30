@@ -908,3 +908,14 @@ Sat 30 Mar 2024 10:58:51 PM UTC:
  tests:  12|0
 total_score: 70/70
 62ef472
+Sat 30 Mar 2024 11:04:53 PM UTC: 
+ list.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:135:35: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  135 |       list->current->prev == NULL && list->current->next != NULL)
+      |                                   ^
+cc1: all warnings being treated as errors
+Compilation failed
+172eb0c
