@@ -96,7 +96,7 @@ void pushCurrent(List * list, void * data)
        current = current->next;
        posicion+= 1;
     }
-}b
+}
 
 void * popFront(List * list) {
     list->current = list->head;

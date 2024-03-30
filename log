@@ -422,3 +422,14 @@ list.c:99:3: error: expected ‘;’ before ‘void’
 cc1: all warnings being treated as errors
 Compilation failed
 5b25cc5
+Sat 30 Mar 2024 04:13:45 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:90:9: error: unused variable ‘L’ [-Werror=unused-variable]
+   90 |   Node *L = createNode(data);
+      |         ^
+cc1: all warnings being treated as errors
+Compilation failed
+b716a76
