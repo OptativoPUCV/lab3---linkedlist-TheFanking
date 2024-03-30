@@ -90,8 +90,9 @@ void pushCurrent(List * list, void * data)
   Node *L = createNode(data);
   if (list == NULL || list->current == NULL)
   {
-    list->tail = L;
-    list->head = L;
+    L = list->tail;
+    L = list->head;
+    list->current = L;
   }
 
   if (list->current == list->head)
