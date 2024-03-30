@@ -828,3 +828,17 @@ Sat 30 Mar 2024 10:08:21 PM UTC:
  tests:  11|1
 total_score: 55/70
 baa5d3a
+Sat 30 Mar 2024 10:09:57 PM UTC: 
+ list.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:146:7: error: expected expression before ‘)’ token
+  146 |   if ()
+      |       ^
+list.c:148:1: error: control reaches end of non-void function [-Werror=return-type]
+  148 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+ce31aab
