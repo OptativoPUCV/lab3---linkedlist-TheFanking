@@ -92,6 +92,7 @@ void pushCurrent(List * list, void * data)
   {
     list->tail = L;
     list->head = L;
+    list->current = L;
   }
   if (list->current == list->head && list->current != NULL)
   {
