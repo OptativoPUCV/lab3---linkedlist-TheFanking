@@ -158,7 +158,7 @@ void * popCurrent(List * list)
     list->current = list->current->next;
     free(temp);
   }
-  return list->current->data;
+  return list->current;
 }
 
 void cleanList(List * list) {
