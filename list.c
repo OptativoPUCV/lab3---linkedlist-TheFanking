@@ -103,8 +103,8 @@ void pushCurrent(List * list, void * data)
 
   if (list->current == list->tail && list->current != NULL)
   {
-    L = list->current->next;
-    L->prev = list->current;
+    L->next = list->current->next;
+    L->prev = list->tail;
     L->next = NULL;
     list->current = L;
   }
