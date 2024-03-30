@@ -145,7 +145,7 @@ void * popCurrent(List * list)
     list->tail->next = NULL;
     list->tail->prev = list->tail;
   }
-  return list->current->data;
+  return list->current;
   
 }
 
